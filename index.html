@@ -42,8 +42,20 @@
     </div>
 
     <nav class="menu">
-        <label class="logo">Emanuel Arroyo</label>
-        <ul class="menu_items" id="ListaMenu">
+        <div class="d-flex">
+            <label class="logo">Emanuel Arroyo</label>
+            <div class="d-flex gap-2 justify-content-start">
+                <li><a href="https://www.linkedin.com/in/ema201217" target="_BLANK" rel="noopener noreferrer"
+                    class="contacto_icon icon-linkedin text-white fs-4"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/ema201217" rel="noopener noreferrer" target="_blank"
+                    class="contacto_icon icon-github text-white fs-4"><i class="fab fa-github"></i></a></li>
+    
+                <li><a href="https://www.freecodecamp.org/ema201217" rel="noopener noreferrer" target="_blank"
+                        class="contacto_icon icon-github text-white fs-4">
+                        <i class="fab fa-free-code-camp"></i></a></li>
+            </div>
+        </div>
+        <ul class="menu_items m-0" id="ListaMenu">
             <li class="navbar_link active" data-id="1"><a href="#inicio"><i
                         class="fas fa-grip-lines-vertical"></i>Inicio</a></li>
             <li class="navbar_link" data-id="2"><a href="#sobre-mi_title"><i
@@ -96,7 +108,7 @@
                     <div>
                         <div class="cv-container" id="cv">
                             <a class="btn-cv" data-id="1" href="./pdf/CV-EmaA-Developer.pdf" rel="noopener noreferrer"
-                                target="_blank">Mirá mi CV!<img src="./img/cv.jpg" alt=""></a>
+                                target="_blank">Mirá mi CV!<img src="./img/cv.png" alt=""></a>
                             <a class="btn-cv" style="opacity: 0;" data-id="2"><img></a>
                             <a class="btn-cv" style="opacity: 0;" data-id="3"><img></a>
                         </div>
@@ -108,27 +120,34 @@
 
     <section class="row justify-content-center gap-4 p-3" id="portafolio">
         <h2 class="section_title sobre-mi_title">Portafolio</h2>
-        <div class="card mb-3 text-dark justify-content-evenly" style="max-width: 540px;">
+
+        <div class="card mb-3 text-dark justify-content-evenly position-relative" style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-12">
-                    <img src="./img/apiDisney.png" class="img-fluid rounded-start" alt="...">
+                    <img src="./img/swagger.png" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-12">
                     <div class="card-body">
-                        <h5 class="card-title">Challenge ALKEMY (BACKEND)</h5>
-                        <p class="card-text">NodeJS | MySQL | Express | Express-validator | Sequelize |
-                            Json Web Token | Bcrypt | Nodemailer | Cypress | Postman Documentation</p>
-                        <p><small>Descripción</small></p>
+                        <h5 class="card-title">Ong Api (BACKEND)</h5>
+                        <p class="card-text">NodeJS | MySQL | Express | AWS-SDK (S3) |
+                            Express-validator | Json Web Token | Sequelize | Swagger-jsdoc | Swagger-ui-express |
+                            Sendgrid/mail
+                            | Jest (supertest) | Swagger Documentation | JIRA | SCRUM</p>
+                        <p><small>Desarrollo de un servicio de Api para una Ong - Realizado por 7 personas - En
+                                proceso</small></p>
                         <p class="card-text position-absolute bottom-0 end-0 p-1">
                             <small class="text-muted">
-                                <a class="icon-link" href="https://documenter.getpostman.com/view/17864000/UVXnJF3K"
-                                    title="Documentación" target="_blank">
-                                    <img width="40px"
-                                        src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/000000/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png" />
-                                </a>
-                                <a class="icon-link" href="https://github.com/ema201217/Challenge-Backend-NodeJs"
+                                <a class="icon-link" href="https://github.com/alkemyTech/OT141-SERVER"
                                     title="Repositorio" target="_blank">
                                     <img width="50px" src="https://img.icons8.com/glyph-neue/64/000000/github.png" />
+                                </a>
+                                <a class="icon-link" href="https://app.swaggerhub.com/apis/ong-somos-mas/ApiONG/1.0.0"
+                                    title="Documentación" target="_blank">
+                                    <img width="50px" src="https://img.icons8.com/color/96/000000/cloud-function.png" />
+                                </a>
+                                <a class="icon-link" href="#"
+                                    title="Próximamente deploy" target="_blank">
+                                    <img src="https://img.icons8.com/ultraviolet/80/000000/domain.png" width="40"/>
                                 </a>
                             </small>
                         </p>
@@ -136,7 +155,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="card mb-3 text-dark justify-content-evenly position-relative" style="max-width: 540px;">
             <div class="row g-0">
@@ -164,28 +182,9 @@
                                     title="Repositorio" target="_blank">
                                     <img width="50px" src="https://img.icons8.com/glyph-neue/64/000000/github.png" />
                                 </a>
-                            </small>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="card mb-3 text-dark justify-content-evenly position-relative" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-12 text-center p-1">
-                    <img src="./img/maquetadoBootstrap.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-12">
-                    <div class="card-body">
-                        <h5 class="card-title">Maquetación Bootstrap (FRONTEND)</h5>
-                        <p class="card-text">HTML | CSS | Bootstrap</p>
-                        <p class="card-text position-absolute bottom-0 end-0 p-1">
-                            <small class="text-muted">
-                                <a class="icon-link" href="https://codepen.io/ema201217/full/JjOgdVG"
-                                    title="Repositorio" target="_blank">
-                                    <img width="50px" src="https://img.icons8.com/ios-filled/100/000000/codepen.png" />
+                                <a class="icon-link" href="#"
+                                    title="Próximamente deploy" target="_blank">
+                                    <img src="https://img.icons8.com/ultraviolet/80/000000/domain.png" width="40"/>
                                 </a>
                             </small>
                         </p>
@@ -194,30 +193,31 @@
             </div>
         </div>
 
-        <div class="card mb-3 text-dark justify-content-evenly position-relative" style="max-width: 540px;">
+        <div class="card mb-3 text-dark justify-content-evenly" style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-12">
-                    <video src="./img/lovelook.mp4" class="img-fluid rounded-start" autoplay>
+                    <img src="./img/apiDisney.png" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-12">
                     <div class="card-body">
-                        <h5 class="card-title">Ecommerce Love Look (Fullstack) - Digital House</h5>
-                        <p class="card-text">Figma | AdobeXD | TRELLO | SCRUM | NodeJS | MySQL |
-                            Express | Express-validator | Sequelize | Express-session | Cookie-parser | Ejs |
-                            Bcrypt | Method-override | Multer | Passport | Passport-facebook | Passport-google-oauth |
-                            Google
-                            translate, Recaptcha | Mode Dark</p>
-                        <p><small>Proyecto ecommerce realizado en el bootcamp de Digital House - Desarrollado
-                                por 3
-                                personas. Se realizo desde la maquetación/diseño hasta toda la arquitectura MVC del
-                                backend junto con la
-                                lógica de negocio requerida</small></p>
+                        <h5 class="card-title">Api DISNEY (BACKEND)</h5>
+                        <p class="card-text">NodeJS | MySQL | Express | Express-validator | Sequelize |
+                            Json Web Token | Bcrypt | Nodemailer | Cypress | Postman Documentation</p>
+                        <p><small>Este proyecto es un challenge hecho para el ingreso a ALKEMY</small></p>
                         <p class="card-text position-absolute bottom-0 end-0 p-1">
                             <small class="text-muted">
-                                <a class="icon-link" href="https://github.com/paloescobar29/grupo_2_lovelook"
+                                <a class="icon-link" href="https://documenter.getpostman.com/view/17864000/UVXnJF3K"
+                                    title="Documentación" target="_blank">
+                                    <img width="40px"
+                                        src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/000000/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png" />
+                                </a>
+                                <a class="icon-link" href="https://github.com/ema201217/Challenge-Backend-NodeJs"
                                     title="Repositorio" target="_blank">
                                     <img width="50px" src="https://img.icons8.com/glyph-neue/64/000000/github.png" />
                                 </a>
+                                <a class="icon-link" href="#"
+                                    title="Próximamente deploy" target="_blank">
+                                    <img src="https://img.icons8.com/ultraviolet/80/000000/domain.png" width="40"/>
                                 </a>
                             </small>
                         </p>
@@ -237,7 +237,7 @@
                         <p class="card-text">ReactJS | Redux | Async-await | React redux | Axios |
                             React Router | React devtools ext | Hooks</p>
                         <p><small>Aplicación hecha en React/Redux que consume información del la api SWAPI,
-                                implementación de
+                               con implementación de
                                 traducción con api Google translate</small></p>
                         <p class="card-text position-absolute bottom-0 end-0 p-1">
                             <small class="text-muted">
@@ -245,6 +245,9 @@
                                     title="Repositorio" target="_blank">
                                     <img width="50px" src="https://img.icons8.com/glyph-neue/64/000000/github.png" />
                                 </a>
+                                <a class="icon-link" href="#"
+                                    title="Próximamente deploy" target="_blank">
+                                    <img src="https://img.icons8.com/ultraviolet/80/000000/domain.png" width="40"/>
                                 </a>
                             </small>
                         </p>
@@ -253,32 +256,55 @@
             </div>
         </div>
 
+        <div class="card mb-3 text-dark justify-content-evenly position-relative" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-12 text-center p-1">
+                    <img src="./img/maquetadoBootstrap.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-12">
+                    <div class="card-body">
+                        <h5 class="card-title">Maquetación Bootstrap (FRONTEND)</h5>
+                        <p class="card-text">HTML | CSS | Bootstrap</p>
+                        <p class="card-text position-absolute bottom-0 end-0 p-1">
+                            <small class="text-muted">
+                                <a class="icon-link" href="https://codepen.io/ema201217/full/JjOgdVG" title="Codepen"
+                                    target="_blank">
+                                    <img width="50px" src="https://img.icons8.com/ios-filled/100/000000/codepen.png" />
+                                </a>
+                            </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="card mb-3 text-dark justify-content-evenly position-relative" style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-12">
-                    <img src="./img/swagger.png" class="img-fluid rounded-start" alt="...">
+                    <img src="./img/lovelook.gif" class="img-fluid rounded-start">
                 </div>
-
-
                 <div class="col-12">
                     <div class="card-body">
-                        <h5 class="card-title">Ong Api (BACKEND)</h5>
-                        <p class="card-text">NodeJS | MySQL | Express | AWS-SDK (S3) |
-                            Express-validator | Json Web Token | Sequelize | Swagger-jsdoc | Swagger-ui-express |
-                            Sendgrid/mail
-                            | Jest (supertest) | Swagger Documentation | JIRA | SCRUM</p>
-                        <p><small>Desarrollo de un servicio de Api para una Ong - Realizado por 7 personas - En
-                                proceso</small></p>
+                        <h5 class="card-title">Ecommerce Love Look (Fullstack) - Digital House</h5>
+                        <p class="card-text">Figma | AdobeXD | TRELLO | SCRUM | NodeJS | MySQL |
+                            Express | Express-validator | Sequelize | Express-session | Cookie-parser | Ejs |
+                            Bcrypt | Method-override | Multer | Passport | Passport-facebook | Passport-google-oauth |
+                            Google
+                            translate, Recaptcha | Dark Mode</p>
+                        <p><small>Proyecto ecommerce realizado en el bootcamp de Digital House - Desarrollado
+                                por 3
+                                personas. Se realizo desde la maquetación/diseño hasta toda la arquitectura MVC del
+                                backend junto con la
+                                lógica de negocio requerida</small></p>
                         <p class="card-text position-absolute bottom-0 end-0 p-1">
                             <small class="text-muted">
-                                <a class="icon-link" href="https://github.com/alkemyTech/OT141-SERVER"
+                                <a class="icon-link" href="https://github.com/paloescobar29/grupo_2_lovelook"
                                     title="Repositorio" target="_blank">
                                     <img width="50px" src="https://img.icons8.com/glyph-neue/64/000000/github.png" />
                                 </a>
-                                <a class="icon-link" href="https://app.swaggerhub.com/apis/ong-somos-mas/ApiONG/1.0.0"
-                                    title="Documentación" target="_blank">
-                                    <img width="50px" src="https://img.icons8.com/color/96/000000/cloud-function.png" />
+                                <a class="icon-link" href="#"
+                                    title="Próximamente deploy" target="_blank">
+                                    <img src="https://img.icons8.com/ultraviolet/80/000000/domain.png" width="40"/>
                                 </a>
                             </small>
                         </p>
@@ -286,6 +312,7 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <section class="habilidades" id="habilidades">
@@ -293,7 +320,6 @@
             <h2 class="section_title habilidades_title">Mis Habilidades</h2>
             <div class="habilidades_grid">
                 <div class="tecnologias">
-                    <h3 class="tecno-subtitle tecnologias-manejo">Tecnologías que manejo</h3>
                     <div class="tecnologias_grid" id="tecnologias_icons">
                         <div class="tecnologias_card" data-id="1"><img
                                 src="https://img.icons8.com/color/96/000000/javascript--v1.png"
