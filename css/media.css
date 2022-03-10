@@ -1,0 +1,128 @@
+@media screen and (max-width:990px){
+    .logo{
+        font-size: 25px;
+        padding-left: 35px;
+    }
+    .tecnologias_grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .proyecto_grid{
+        grid-template-columns: repeat(2,1fr);
+        margin: 0px;
+        gap: 20px;
+    }
+    .proyecto_item{
+        width: 100%;
+        margin-bottom: 10px;
+        margin: 0px;
+        max-height: 500px;
+        
+    }
+    .contacto_container{
+        width: 100%;
+    }
+    .contacto_flex{
+        grid-template-columns: 1fr;
+    }
+    .contacto_info{
+        order: 0;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 858px){
+    .menu{
+        height: 65px;
+        position:fixed;
+        top:0;
+        /* z-index: 1000; */
+    }
+    .btn_menu{
+        display: inline-flex;
+    }
+    .menu_items{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 65px;
+        background: rgba(0, 0, 0, 0.95);
+        left: -100vw;
+        text-align: center;
+        transition: all 1s;
+        flex-direction: column;
+        /* z-index: 1100; */
+        padding-top: 30px;
+    }
+    .menu_items li{
+        /* margin: 30px 0 0 0; */
+        line-height: 30px;
+    }
+    .menu_items li a {
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .menu_items li a:hover{
+        transform: scale(1.2);
+        
+    }
+    .logo{
+        font-size: 20px;
+        padding-left: 35px;
+    }
+
+    /* hero */
+    .div_hero_info-text span{
+        color: #fff;
+        font-size: 25px;
+    
+    }
+    .div_hero_info-text h1{
+        font-size: 35px;
+        line-height: 30px;
+    }
+    /*------ Sobre mi ---------- */
+    .sobre-mi_grid{
+        display: block;
+    }
+    .sobre-mi_img {
+    height: 300px;
+    }
+    .sobre-mi_img img{
+        width: 300px;
+        height: 300px;
+    }
+    .btn-cv{
+        margin: 20px auto;
+    }
+    
+    /*------ Habilidades----- */
+    .habilidades_grid{
+        display: block;
+    }
+    .proyecto_grid{
+        grid-template-columns: 1fr;
+        margin: 0px;
+        gap: 20px;
+        padding: 0px;
+    }
+
+    /* ----contacto -----*/
+    .form_btn-enviar{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .menu_items li{
+        margin: 5px 0 0 0;
+    }
+    .menu_items {
+        overflow: hidden;
+        /* height: calc(100% - 65px); */
+        /* left: 0; */
+    }
+}

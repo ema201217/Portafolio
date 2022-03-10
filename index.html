@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 minimum-scale =1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Emanuel Arroyo | Portafolio CV</title>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.35.0/tsparticles.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!-- <script src="./js/particle.js" defer></script> -->
+    <!-- <script src="./js/typed.js" defer></script> -->
+    <!-- <script src="./js/configuracion-typed.js" defer></script> -->
+    <script src="./js/Sortable.min.js" defer></script>
+    <script src="./js/optionSortable.js" defer></script>
+    <script src="./js/app.js" defer></script>
+    <script src="./js/loading.js" defer></script>
+</head>
+
+<body class="text-white bg-dark">
+    <!-- SPINNING SQUARES -->
+    <div class="spinner-box" id="spinner">
+        <div class="configure-border-1">
+            <div class="configure-core"></div>
+        </div>
+        <div class="configure-border-2">
+            <div class="configure-core"></div>
+        </div>
+    </div>
+
+    <nav class="menu">
+        <label class="logo">Emanuel Arroyo</label>
+        <ul class="menu_items" id="ListaMenu">
+            <li class="navbar_link active" data-id="1"><a href="#inicio"><i
+                        class="fas fa-grip-lines-vertical"></i>Inicio</a></li>
+            <li class="navbar_link" data-id="2"><a href="#sobre-mi_title"><i
+                        class="fas fa-grip-lines-vertical"></i>Acerca de mi</a></li>
+            <li class="navbar_link" data-id="3"><a href="#habilidades"><i
+                        class="fas fa-grip-lines-vertical"></i>Habilidades</a></li>
+            <li class="navbar_link" data-id="4"><a href="#portafolio"><i
+                        class="fas fa-grip-lines-vertical"></i>Portafolio</a></li>
+            <li class="navbar_link" data-id="5"><a href="#contacto"><i
+                        class="fas fa-grip-lines-vertical"></i>Contacto</a></li>
+        </ul>
+        <div class="btn_menu">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="inicio" id="inicio">
+        <div class="container-hero div_hero-img">
+            <div class=" container-hero div_hero-opaco">
+                <div class="div_hero_info">
+                    <div class="div_hero_info-text">
+                        <span class="inicio_mensaje1">Hola!</span>
+                        <h1 class="inicio_nombre"> Soy Emanuel Arroyo</h1>
+                        <span class="inicio_mensaje2">Full Stack Developer</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre-mi" id="sobre-mi_title">
+        <div class="container">
+            <h2 class="section_title sobre-mi_title"> Acerca de Mi</h2>
+            <div class="sobre-mi_grid" id="">
+                <div class="sobre-mi_img img">
+                    <img src="./img/photo-personal.png" alt="Foto cv Emanuel" class="img1">
+                </div>
+                <div class="sobre-mi_descripcion">
+                    <h3>Emanuel Arroyo, Full Stack Developer</h3>
+
+                    <p class="descripcion_text">
+                        Soy un Programador Web Full Stack de
+                        mente ágil, curioso y autodidacta.
+                        Estoy buscando explorar más de cerca el
+                        mundo de la programación con una empresa
+                        que considere acompañarme en mi proceso
+                        de evolución y desarrollo profesional.
+                    </p>
+                    <div>
+                        <div class="cv-container" id="cv">
+                            <a class="btn-cv" data-id="1" href="./pdf/CV-EmaA-Developer.pdf" rel="noopener noreferrer"
+                                target="_blank">Mirá mi CV!<img src="./img/cv.jpg" alt=""></a>
+                            <a class="btn-cv" style="opacity: 0;" data-id="2"><img></a>
+                            <a class="btn-cv" style="opacity: 0;" data-id="3"><img></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="row justify-content-center gap-4 p-3" id="portafolio">
+        <h2 class="section_title sobre-mi_title">Portafolio</h2>
+        <div class="card mb-3 text-dark justify-content-evenly" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-12">
+                    <img src="./img/apiDisney.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-12">
+                    <div class="card-body">
+                        <h5 class="card-title">Challenge ALKEMY (BACKEND)</h5>
+                        <p class="card-text">NodeJS | MySQL | Express | Express-validator | Sequelize |
+                            Json Web Token | Bcrypt | Nodemailer | Cypress | Postman Documentation</p>
+                        <p><small>Descripción</small></p>
+                        <p class="card-text position-absolute bottom-0 end-0 p-1">
+                            <small class="text-muted">
+                                <a class="icon-link" href="https://documenter.getpostman.com/view/17864000/UVXnJF3K"
+                                    title="Documentación" target="_blank">
+                                    <img width="40px"
+                                        src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/000000/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png" />
+                                </a>
+                                <a class="icon-link" href="https://github.com/ema201217/Challenge-Backend-NodeJs"
+                                    title="Repositorio" target="_blank">
+                                    <img width="50px" src="https://img.icons8.com/glyph-neue/64/000000/github.png" />
+                                </a>
+                            </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card mb-3 text-dark justify-content-evenly position-relative" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-12">
+                    <img src="./img/apiPizzeria.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-12">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizzeria (BACKEND)</h5>
+                        <p class="card-text">NodeJS | MongoDB | Express | Express-fileupload |
+                            Express-validator | Mongoose | Mongoose-autopopulate | Bcrypt | Postman Documentation |
+                            TRELLO | SCRUM</p>
+                        <p><small>Este proyecto esta formado por 8 personas ( 2 backend, 2 testing, 2 frontend, 1
+                                project manager
+                                y 1 UX ) - En este desarrollo estoy como Backend - En proceso </small></p>
+                        <p class="card-text position-absolute bottom-0 end-0 p-1">
+                            <small class="text-muted">
+                                <a class="icon-link" href="https://documenter.getpostman.com/view/17864000/UVeGr6QQ"
+                                    title="Documentación" target="_blank">
+                                    <img width="40px"
+                                        src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/000000/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png" />
+                                </a>
+                                <a class="icon-link"
+                                    href="https://github.com/YonPalac1/pizzeria_don_remolo/tree/developer"
+                                    title="Repositorio" target="_blank">
+                                    <img width="50px" src="https://img.icons8.com/glyph-neue/64/000000/github.png" />
+                                </a>
+                            </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card mb-3 text-dark justify-content-evenly position-relative" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-12 text-center p-1">
+                    <img src="./img/maquetadoBootstrap.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-12">
+                    <div class="card-body">
+                        <h5 class="card-title">Maquetación Bootstrap (FRONTEND)</h5>
+                        <p class="card-text">HTML | CSS | Bootstrap</p>
+                        <p class="card-text position-absolute bottom-0 end-0 p-1">
+                            <small class="text-muted">
+                                <a class="icon-link" href="https://codepen.io/ema201217/full/JjOgdVG"
+                                    title="Repositorio" target="_blank">
+                                    <img width="50px" src="https://img.icons8.com/ios-filled/100/000000/codepen.png" />
+                                </a>
+                            </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 text-dark justify-content-evenly position-relative" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-12">
+                    <video src="./img/lovelook.mp4" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-12">
+                    <div class="card-body">
+                        <h5 class="card-title">Ecommerce Love Look (Fullstack) - Digital House</h5>
+                        <p class="card-text">Figma | AdobeXD | TRELLO | SCRUM | NodeJS | MySQL |
+                            Express | Express-validator | Sequelize | Express-session | Cookie-parser | Ejs |
+                            Bcrypt | Method-override | Multer | Passport | Passport-facebook | Passport-google-oauth |
+                            Google
+                            translate, Recaptcha | Mode Dark</p>
+                        <p><small>Proyecto ecommerce realizado en el bootcamp realizado en Digital House - Desarrollado
+                                por 3
+                                personas. Se realizo desde la maquetación/diseño hasta toda la arquitectura MVC del
+                                backend junto con la
+                                lógica de negocio requerida</small></p>
+                        <p class="card-text position-absolute bottom-0 end-0 p-1">
+                            <small class="text-muted">
+                                <a class="icon-link" href="https://github.com/paloescobar29/grupo_2_lovelook"
+                                    title="Repositorio" target="_blank">
+                                    <img width="50px" src="https://img.icons8.com/glyph-neue/64/000000/github.png" />
+                                </a>
+                                </a>
+                            </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 text-dark justify-content-evenly position-relative" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-12">
+                    <img src="./img/SWAPI.gif" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-12">
+                    <div class="card-body">
+                        <h5 class="card-title">Star Wars Planets (FRONTEND)</h5>
+                        <p class="card-text">ReactJS | Redux | Async-await | React redux | Axios |
+                            React Router | React devtools ext | Hooks</p>
+                        <p><small>Aplicación hecha en React/Redux que consume información del la api SWAPI,
+                                implementación de
+                                traducción con api Google translate</small></p>
+                        <p class="card-text position-absolute bottom-0 end-0 p-1">
+                            <small class="text-muted">
+                                <a class="icon-link" href="https://github.com/ema201217/React-Redux-SWAPI"
+                                    title="Repositorio" target="_blank">
+                                    <img width="50px" src="https://img.icons8.com/glyph-neue/64/000000/github.png" />
+                                </a>
+                                </a>
+                            </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card mb-3 text-dark justify-content-evenly position-relative" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-12">
+                    <img src="./img/swagger.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-12">
+                    <div class="card-body">
+                        <h5 class="card-title">Ong Api (BACKEND)</h5>
+                        <p class="card-text">NodeJS | MySQL | Express | AWS-SDK (S3) |
+                            Express-validator | Json Web Token | Sequelize | Swagger-jsdoc | Swagger-ui-express |
+                            Sendgrid/mail
+                            | Jest (supertest) | Swagger Documentation | JIRA | SCRUM</p>
+                        <p><small>Desarrollo de un servicio de Api para una Ong - Realizado por 7 personas - En
+                                proceso</small></p>
+                        <p class="card-text position-absolute bottom-0 end-0 p-1">
+                            <small class="text-muted">
+                                <a class="icon-link" href="https://github.com/alkemyTech/OT141-SERVER"
+                                    title="Repositorio" target="_blank">
+                                    <img width="50px" src="https://img.icons8.com/glyph-neue/64/000000/github.png" />
+                                </a>
+                                <a class="icon-link" href="https://app.swaggerhub.com/apis/ong-somos-mas/ApiONG/1.0.0"
+                                    title="Documentación" target="_blank">
+                                    <img width="50px" src="https://img.icons8.com/color/96/000000/cloud-function.png" />
+                                </a>
+                            </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="habilidades" id="habilidades">
+        <div class="container">
+            <h2 class="section_title habilidades_title">Mis Habilidades</h2>
+            <div class="habilidades_grid">
+                <div class="tecnologias">
+                    <h3 class="tecno-subtitle tecnologias-manejo">Tecnologías que manejo</h3>
+                    <div class="tecnologias_grid" id="tecnologias_icons">
+                        <div class="tecnologias_card" data-id="1"><img
+                                src="https://img.icons8.com/color/96/000000/javascript--v1.png"
+                                width="80px" /></i><span>JS</span></div>
+                        <div class="tecnologias_card" data-id="2"><i class="fab fa-node-js"></i><span>Node js</span>
+                        </div>
+                        <div class="tecnologias_card" data-id="3"><i class="fab fa-html5"></i><span>HTML 5</span></div>
+                        <div class="tecnologias_card" data-id="4"><i class="fab fa-css3-alt"></i><span>CSS 3</span>
+                        </div>
+                        <div class="tecnologias_card" data-id="5"><i class="fab fa-bootstrap"></i><span>Bootstrap</span>
+                        </div>
+                        <div class="tecnologias_card" data-id="6"><img
+                                src="https://img.icons8.com/color/96/000000/mysql-logo.png" /><span>MySQL</span>
+                        </div>
+                        <div class="tecnologias_card" data-id="7"><i class="fab fa-git-alt"></i><span>GIT y
+                                GITHUB</span></div>
+                        <div class="tecnologias_card" data-id="8"><img
+                                src="https://img.icons8.com/color/48/000000/figma--v1.png"
+                                width="80px" /><span>Figma</span></div>
+                        <div class="tecnologias_card" data-id="9"><img
+                                src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/000000/external-bitbucket-is-a-web-based-version-control-repository-hosting-service-logo-color-tal-revivo.png"
+                                width="80px" /><span>Bitbucket</span></div>
+                        <div class="tecnologias_card" data-id="10"><img
+                                src="https://img.icons8.com/officel/80/000000/react.png"
+                                width="80px" /><span>ReactJS</span></div>
+                        <div class="tecnologias_card" data-id="11"><img
+                                src="https://img.icons8.com/color/96/000000/redux.png" width="80px" /><span>Redux</span>
+                        </div>
+                        <div class="tecnologias_card" data-id="12"><img
+                                src="https://img.icons8.com/color/96/000000/adobe-xd--v1.png" width="80px" /><span>Adobe
+                                XD</span></div>
+                        <div class="tecnologias_card" data-id="13"><img
+                                src="https://img.icons8.com/color/96/000000/java-web-token.png"
+                                width="80px" /><span>JWT</span></div>
+                        <div class="tecnologias_card" data-id="14"><img
+                                src="https://img.icons8.com/color/96/000000/google-cloud.png"
+                                width="80px" /><span>Google Cloud</span></div>
+                        <div class="tecnologias_card" data-id="15"><img
+                                src="https://img.icons8.com/color/96/000000/jira.png" width="80px" /><span>Jira</span>
+                        </div>
+                        <div class="tecnologias_card" data-id="16"><img
+                                src="https://img.icons8.com/color/96/000000/trello.png"
+                                width="80px" /><span>Trello</span></div>
+                        <div class="tecnologias_card" data-id="17"><img
+                                src="https://img.icons8.com/color/96/000000/mongodb.png"
+                                width="80px" /><span>MongoDB</span></div>
+                        <div class="tecnologias_card" data-id="18"><img
+                                src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/000000/external-jest-can-collect-code-coverage-information-from-entire-projects-logo-shadow-tal-revivo.png"
+                                width="80px" /><span>Jest</span></div>
+                    </div>
+                </div>
+                <div class="habilidades_grid">
+                    <div class="blandas habilidades-blandas">
+                        <h3 class="habilidades_title" style="color: var(--third-color);"><span
+                                class="sintaxis">const</span> otrasAptitudes <span class="sintaxis">= [</span></h3>
+                        <ul class="habilidades-lista">
+                            <li class="valor-array">"Disciplina de estudio"<span
+                                    style="color:gray;font-size:1.5rem">,</span></li>
+                            <li class="valor-array">"Comunicación"<span style="color:gray;font-size:1.5rem">,</span>
+                            </li>
+                            <li class="valor-array">"Me gusta enseñar y compartir mis conocimientos"<span
+                                    style="color:gray;font-size:1.5rem">,</span></li>
+                            <li class="valor-array">"Empatía y trabajo en equipo"<span
+                                    style="color:gray;font-size:1.5rem">,</span></li>
+                        </ul>
+                        <h3 class="sintaxis">]</h3>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <h2 class="section_title contacto_title">Contacto</h2>
+            <div class="contacto_container">
+                <div class="contacto_flex">
+                    <div class="contacto_info" id="InfoContacto">
+                        <div class="contacto_icon-content" data-id="1" title="Linkedin"><a
+                                href="https://www.linkedin.com/in/ema201217" target="_BLANK" rel="noopener noreferrer"
+                                class="contacto_icon icon-linkedin"><i class="fab fa-linkedin"></i></a></div>
+                        <div class="contacto_icon-content" data-id="2" title="Git Hub"><a
+                                href="https://github.com/ema201217" rel="noopener noreferrer" target="_blank"
+                                class="contacto_icon icon-github"><i class="fab fa-github"></i></a></div>
+                        <div class="contacto_icon-content" data-id="3" title="Gmail"><a
+                                href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=ema201217@gmail.com"
+                                rel="noopener noreferrer" target="_blank" class="contacto_icon icon-github">
+                                <i class="fab fa-google"></i>
+                            </a></div>
+                    </div>
+
+                    <form action="https://formsubmit.co/ema201217@gmail.com" method="POST" target="_blank">
+                        <div class="contacto_form">
+                            <input type="text" placeholder="Nombre" name="name" id="form_nombre" required>
+                            <input type="email" name="email" id="form_email" placeholder="E-mail" required>
+                            <input type="hidden" name="_ captcha" value="false">
+                            <input type="text" placeholder="Asunto" name="subject" id="form_asunto" required>
+                            <textarea id="form_mensaje" placeholder="Mensaje" name="message"></textarea>
+                            <button type="submit" class="form_btn-enviar" name="enviar">Enviar</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
